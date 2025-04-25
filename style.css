@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/*para resertar o padrao de cada navegador*/
+
+.hubot-sans {
+    font-family: "Hubot Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.julius-sans-one-regular {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body {
+    background-color: #fde9ea;
+}
+
+nav.menu-lateral {
+    font-family: "Hubot Sans", sans-serif;
+    width: 80px;
+    height: 100%;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #f9e0db;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+nav.menu-lateral.expandir {
+    width: 300px;
+}
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir>i {
+    color: #588061;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu:hover {
+    background: #f9e0db;
+}
+
+ul li.item-menu {
+    transition: .2s;
+}
+
+ul li.ativo {
+    background-color: #f9e0db;
+}
+
+.item-menu a {
+    color: #588061;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+}
+
+.txt-link {
+    margin-top: 5px;
+    margin-left: 60px;
+    white-space: nowrap;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link {
+    margin-left: 30px;
+    opacity: 1;
+}
+
+.icon>i {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+
+/*pag*/
+
+
+.slider {
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    width: 720px;
+    height: 500px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+
+}
+
+p {
+    font-size: 40px;
+    font-family: "Julius Sans One", sans-serif;
+    color: #e7b5ac;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+#slide1 {
+    background-color: #f9e0db;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #e7b5ac;
+    width: 700px;
+    height: 400px;
+
+}
+
+#slide2{
+    background-color: #f9e0db;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #e7b5ac;
+    width: 700px;
+    height: 430px;
+
+    text-align: center;
+    display: none;
+}
+
+form {
+    padding-top: 25px;
+    font-family: "Hubot Sans", sans-serif;
+    color: #588061;
+    font-size: 20px;
+}
+
+.campo{
+ margin: 10px;
+}
+
+.linha1{
+    display: flex;
+    margin-left: 90px;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    border-style: solid;
+    border-color: #588061;
+    border-width: 1px;
+    border-radius: 8px;
+    box-shadow: none;
+    color: #588061;
+    font-family: "Hubot Sans", sans-serif;
+}
+
+/* Slide base */
+.slide {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    width: 700px;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    display: none;
+    z-index: 0;
+}
+
+/* Slide visível */
+.slide.active {
+    opacity: 1;
+    display: block;
+    z-index: 1;
+}
+
+/* Animações de entrada/saída */
+.slide-enter-right {
+    transform: translate(100%, 0);
+    opacity: 0;
+}
+
+.slide-enter-left {
+    transform: translate(-100%, 0);
+    opacity: 0;
+}
+
+.slide-exit-left {
+    transform: translate(-100%, 0);
+    opacity: 0;
+}
+
+.slide-exit-right {
+    transform: translate(100%, 0);
+    opacity: 0;
+}
+
+
+#input-nome{
+    margin-left: 15px;
+
+}
+
+#input-cpf{
+    margin-left: 17px;
+}
+
+#label-cpf{
+    padding-left: 15px;
+}
+
+#label-email{
+    padding-left: 10px;
+    padding-right: 4px;
+}
+
+#input-cidade{
+    margin-left: 3px;
+}
+
+#label-nome{
+    margin-left: 5px;
+}
+
+#input-salario{
+    width: 400px;
+}
+
+#label-vt{
+    margin-right: 300px;
+}
+
+#input-d14{
+    margin-right: 160px ;
+}
+
+#input-dpir{
+    margin-right: 100px;
+}
+
+.input-vt{
+    font-size: 10px;
+}
+
+input[type="radio"] {
+  transform: scale(0.5); /* Ajuste o valor para o tamanho desejado */
+  accent-color: #588061;
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+}
+
+.custom-radio {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+  color: #588061;
+  cursor: pointer;
+  position: relative;
+}
+
+.custom-radio input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #588061;
+  border-radius: 50%;
+  position: relative;
+  margin-left: 80px;
+  cursor: pointer;
+}
+
+.custom-radio input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  background-color: #588061;
+  border-radius: 50%;
+}
+
+.linha2{
+    margin-bottom: 20px;
+}
+
+
+select{
+    font-family: "Hubot Sans", sans-serif;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    border-style: solid;
+    border-color: #588061;
+    border-width: 1px;
+    border-radius: 8px;
+    box-shadow: none;
+    color: #588061;
+    margin-left: 13px;
+}
+
+option{
+    font-family: "Hubot Sans", sans-serif;
+    color: #588061;
+}
+
+
+.botoes-foda{
+    color: #588061;
+    border: none;
+    padding: 12px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: none;
+}
+
+.botoes{
+    display: flex;
+    margin-left: 290px;
+}
+
+.bi-arrow-right-square-fill{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.bi-arrow-clockwise{
+    font-size: 25px;
+    color: #e7b5ac;
+}
+
+#resetar{
+    margin-top: 7px;
+}
+
+
+
